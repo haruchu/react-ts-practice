@@ -1,12 +1,14 @@
-import React from "react"
+import React, {useState} from "react"
 import styled from 'styled-components';
-import { AiOutlineHeart } from "react-icons/ai"
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai"
 
 export const LikedButton: React.VFC = () => {
+  const [isLiked, setIsLiked] = useState(false)   // boolean型
+
   return (
-    <StyledLikedButton>
-      <StyledShadow/>
-      <AiOutlineHeart />
+    <StyledLikedButton onClick={() => {setIsLiked(!isLiked)}}>
+      <StyledShadow />
+      { isLiked ? (<AiFillHeart/>) : (<AiOutlineHeart />)}
     </StyledLikedButton>
   );
 };
@@ -32,6 +34,8 @@ const StyledLikedButton = styled.button`
   border: none;
   cursor: pointer;
   position: relative;
+
+  ${ (isLiked) => isLiked && `color: #FF3399;`}
 
   & > ${StyledShadow} {
     opacity: 0;
