@@ -12,7 +12,7 @@ export const EditButton: React.VFC<Props> = ({onClick}) => {
   return (
     <StyledButton onClick={ onClick }>
       <StyledShadow />
-      <MdModeEdit />
+      <MdModeEdit className="edit-icon"/>
     </StyledButton>
   );
 };
@@ -38,6 +38,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   position: relative;
   color: ${COLOR.WHITE};
+
+  & > .edit-icon {
+    width: 100%;
+    height: 100%;
+  }
 
   & > ${StyledShadow} {
     opacity: 0;
