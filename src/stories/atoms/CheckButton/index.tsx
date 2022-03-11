@@ -16,7 +16,7 @@ export const CheckButton: React.VFC<Props> = () => {
 
   return (
     <StyledButton onClick={ onClick }>
-      <FiCheck/>
+      <FiCheck className="check-icon"/>
     </StyledButton>
 
   );
@@ -40,7 +40,7 @@ const StyledButton = styled.button`
     color: ${COLOR.LIGHT_BLUE};
   }
 
-  &:hover > * {
+  &:hover > .check-icon {
     display: block;
     opacity: 1;
   }
