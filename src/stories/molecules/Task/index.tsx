@@ -63,7 +63,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   padding: 8px 6px;
   overflow: hidden;
-  background-color: black;
+  background-color: ${COLOR.BLACK};
 `;
 
 const StyledCheckButtonWrapper = styled.div`
