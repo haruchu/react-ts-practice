@@ -7,12 +7,7 @@ interface Props {
   onClick: VoidFunction,
 }
 
-export const CheckButton: React.VFC<Props> = () => {
-
-  //仮のonEditComplete(動作確認)
-  function onClick() {
-    console.log("Checked");
-  }
+export const CheckButton: React.VFC<Props> = ({onClick}) => {
 
   return (
     <StyledButton onClick={ onClick }>
