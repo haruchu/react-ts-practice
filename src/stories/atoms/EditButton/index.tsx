@@ -42,6 +42,7 @@ const StyledButton = styled.button`
   & > .edit-icon {
     width: 100%;
     height: 100%;
+    transform: scale(2);
   }
 
   & > ${StyledShadow} {
