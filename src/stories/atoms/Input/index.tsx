@@ -2,18 +2,15 @@ import React, { useEffect, useRef } from "react"
 import styled from 'styled-components';
 import COLOR from "../../../variables/color";
 
+type onEditCompleteType = (something: string) => void;
+
 interface Props {
   defaultValue: string,
-  onEditComplete: VoidFunction
+  onEditComplete: onEditCompleteType
 }
 
-export const Input: React.VFC<Props> = ({ defaultValue = "" }) => {
+export const Input: React.VFC<Props> = ({ defaultValue = "", onEditComplete }) => {
   const InputRef = useRef<HTMLInputElement>(null!);
-
-  //仮のonEditComplete(動作確認)
-  function onEditComplete(value: string) {
-    console.log(value);
-  }
 
   useEffect(() => {
     InputRef.current.value = defaultValue;
