@@ -7,7 +7,12 @@ interface Props {
   onClick: VoidFunction,
 }
 
-export const AddTaskButton: React.VFC<Props> = ({onClick}) => {
+export const AddTaskButton: React.VFC<Props> = () => {
+
+  //仮のonEditComplete(動作確認)
+  function onClick() {
+    console.log("AddTask");
+  }
 
   return (
     <StyledButton onClick={ onClick }>
@@ -53,7 +58,7 @@ const StyledButton = styled.button`
 const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 2px 6px;
+  padding: 2px 10px;
   color: ${COLOR.LIGHT_BLUE};
 
   & > .plus-icon {
