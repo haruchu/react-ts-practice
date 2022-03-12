@@ -5,27 +5,19 @@ import { CheckButton } from "../../atoms/CheckButton";
 import { Input } from "../../atoms/Input";
 import { EditButton } from "../../atoms/EditButton";
 
+type onTaskNameChangeType = (something: string) => void;
+
 
 interface Props {
-  onTaskNameChange: VoidFunction,
+  onTaskNameChange: onTaskNameChangeType,
   onTaskComplete: VoidFunction,
   taskName: string,
   defaultIsEditing: boolean,
 }
 
-export const Task: React.VFC<Props> = ({ taskName = "", defaultIsEditing = false }) => {
+export const Task: React.VFC<Props> = ({ onTaskNameChange, onTaskComplete, taskName = "", defaultIsEditing = false }) => {
 
   const [isEditing, setIsEditing] = useState(defaultIsEditing);
-
-  // 仮関数
-  const onTaskNameChange = (value: string) => {
-    console.log(value);
-  };
-
-  //仮関数
-  const onTaskComplete = () => {
-    console.log("complete");
-  }
 
   const onEditComplete = (value: string) => {
     setIsEditing(false);
