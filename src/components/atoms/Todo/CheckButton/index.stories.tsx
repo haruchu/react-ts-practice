@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 import { CheckButton } from "."
 
 export default {
-  title: "Atoms/CheckButton",
+  title: "Atoms/Todo/CheckButton",
   component: CheckButton,
 } as ComponentMeta<typeof CheckButton>
 

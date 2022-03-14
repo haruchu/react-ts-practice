@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components';
 import { FiCheck } from "react-icons/fi"
-import COLOR from "../../../variables/color";
+import COLOR from "../../../../variables/color";
 
 interface Props {
   onClick: VoidFunction,

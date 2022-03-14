@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import styled from 'styled-components';
 import {MdModeEdit} from 'react-icons/md'
-import COLOR from "../../../variables/color";
+import COLOR from "../../../../variables/color";
 
 interface Props {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void

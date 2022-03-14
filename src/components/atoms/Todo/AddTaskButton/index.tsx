@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import COLOR from "../../../variables/color";
+import COLOR from "../../../../variables/color";
 import { IoMdAddCircleOutline } from "react-icons/io"
 
 interface Props {
