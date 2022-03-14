@@ -1,9 +1,9 @@
 import React, {useState} from "react"
 import styled from 'styled-components';
 import COLOR from "../../../variables/color";
-import { CheckButton } from "../../atoms/CheckButton";
-import { Input } from "../../atoms/Input";
-import { EditButton } from "../../atoms/EditButton";
+import { CheckButton } from "../../atoms/Todo/CheckButton";
+import { Input } from "../../atoms/Todo/Input";
+import { EditButton } from "../../atoms/Todo/EditButton";
 
 type onTaskNameChangeType = (something: string) => void;
 

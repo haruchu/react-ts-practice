@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 import { Input } from "."
 
 export default {
-  title: "Atoms/Input",
+  title: "Atoms/Todo/Input",
   component: Input,
 } as ComponentMeta<typeof Input>
 

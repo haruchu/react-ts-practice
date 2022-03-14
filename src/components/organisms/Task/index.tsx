@@ -7,7 +7,7 @@ import type {
 } from "react-beautiful-dnd";
 import styled from 'styled-components';
 import COLOR from "../../../variables/color";
-import { AddTaskButton } from "../../atoms/AddTaskButton";
+import { AddTaskButton } from "../../atoms/Todo/AddTaskButton";
 import {Task} from "../../molecules/Task"
 
 export const Todo: React.VFC = () => {

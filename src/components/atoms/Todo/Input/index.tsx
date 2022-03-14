@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import styled from 'styled-components';
-import COLOR from "../../../variables/color";
+import COLOR from "../../../../variables/color";
 
 type onEditCompleteType = (something: string) => void;
 

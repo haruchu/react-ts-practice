@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 import { AddTaskButton } from "."
 
 export default {
-  title: "Atoms/AddTaskButton",
+  title: "Atoms/Todo/AddTaskButton",
   component: AddTaskButton,
 } as ComponentMeta<typeof AddTaskButton>
 
